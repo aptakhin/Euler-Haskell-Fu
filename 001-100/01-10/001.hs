@@ -1,7 +1,7 @@
-import Data.List  
-import GHC.Exts
-import GHC.Integer
-import Prelude
-
+-- Multiples of 3 and 5
+--
+module Main where
+ 
+main :: IO ()
 main = do
-	sum [1..999]
+	print $ sum [x | x <- [1..999], x `mod` 3 == 0 || x `mod` 5 == 0]
